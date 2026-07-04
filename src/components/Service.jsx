@@ -152,7 +152,7 @@ const brands = [
   { name: "Dell", logo: "/brands/dell.png" },
   { name: "Lenovo", logo: "/brands/lenovo.png" },
   { name: "Acer", logo: "/brands/acer.png" },
-  { name: "Apple", logo: "/brands/apple.png" },
+  { name: "Apple", logo: "/brands/mac.png" },
 ];
 
 const Service = () => {
