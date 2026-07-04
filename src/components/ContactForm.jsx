@@ -292,7 +292,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-orange-500 px-7 py-4 text-sm font-extrabold text-white shadow-xl shadow-orange-500/20 transition-all hover:-translate-y-0.5 hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
+        className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-md bg-orange-500 px-7 py-4 text-sm font-extrabold text-white shadow-xl shadow-orange-500/20 transition-all hover:-translate-y-0.5 hover:bg-orange-600 disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:translate-y-0"
       >
         {status === "loading" ? (
           <>
@@ -312,7 +312,7 @@ export default function ContactForm() {
         href="https://wa.me/919878224658"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-full border border-gray-200 bg-white px-7 py-4 text-sm font-extrabold text-black transition-all hover:border-orange-200 hover:bg-orange-50 hover:text-orange-600"
+        className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-md border border-gray-200 bg-white px-7 py-4 text-sm font-extrabold text-black transition-all hover:border-orange-200 hover:bg-orange-50 hover:text-orange-600"
       >
         <MessageCircle className="h-4 w-4 text-orange-500" />
         Contact on WhatsApp Instead
@@ -326,4 +326,3 @@ export default function ContactForm() {
     </form>
   );
 }
-

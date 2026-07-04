@@ -137,7 +137,21 @@ const localBusinessSchema = {
     addressRegion: "Chandigarh",
     addressCountry: "IN",
   },
-
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "11:00",
+      closes: "20:00",
+    },
+  ],
   areaServed: ["Chandigarh", "Mohali", "Panchkula", "Zirakpur"],
 
   knowsAbout: [
@@ -198,11 +212,11 @@ export default function ContactPage() {
                   Sector 20-C, Chandigarh
                 </div>
 
-                <h1 className="mt-6 text-4xl font-extrabold leading-tight tracking-tight md:text-6xl lg:text-7xl">
+                <h1 className="mt-6 text-lg font-extrabold leading-tight tracking-tight md:text-xl lg:text-3xl">
                   Contact <span className="text-orange-500">LaptopDoc</span>
                 </h1>
 
-                <p className="mt-6 max-w-3xl text-base font-medium leading-8 text-gray-300 md:text-xl">
+                <p className="mt-6 max-w-3xl text-xs font-medium leading-8 text-gray-300 md:text-sm">
                   Visit LaptopDoc for laptop repair, desktop repair, motherboard
                   diagnosis, screen replacement, hinge repair, maintenance, data
                   recovery, software support, RAM upgrades and SSD upgrades.
@@ -231,7 +245,7 @@ export default function ContactPage() {
                     href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center justify-center gap-2 rounded-full bg-orange-500 px-8 py-4 text-base font-extrabold text-white transition-all hover:-translate-y-0.5 hover:bg-orange-600"
+                    className="group inline-flex items-center justify-center gap-2 rounded-md bg-orange-500 px-8 py-4 text-base font-extrabold text-white transition-all hover:-translate-y-0.5 hover:bg-orange-600"
                   >
                     Get Directions
                     <Navigation className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -239,7 +253,7 @@ export default function ContactPage() {
 
                   <Link
                     href="/services"
-                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/10 px-8 py-4 text-base font-extrabold text-white transition-all hover:bg-white hover:text-black"
+                    className="inline-flex items-center justify-center gap-2 rounded-md border border-white/15 bg-white/10 px-8 py-4 text-base font-extrabold text-white transition-all hover:bg-white hover:text-black"
                   >
                     View Repair Services
                     <ArrowRight className="h-5 w-5" />
@@ -294,11 +308,11 @@ export default function ContactPage() {
                   <MapPin className="h-7 w-7" />
                 </div>
 
-                <h2 className="mt-6 text-2xl font-extrabold md:text-3xl">
+                <h2 className="mt-6 text-lg font-extrabold md:text-xl">
                   LaptopDoc Shop Location
                 </h2>
 
-                <address className="mt-4 not-italic text-lg font-medium leading-8 text-gray-300">
+                <address className="mt-4 not-italic text-sm font-medium leading-8 text-gray-300">
                   SCO 66, 1st Floor,
                   <br />
                   Sector 20-C,
@@ -310,7 +324,7 @@ export default function ContactPage() {
                   href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-7 inline-flex items-center gap-2 rounded-full bg-orange-500 px-6 py-3.5 text-sm font-extrabold text-white transition-colors hover:bg-orange-600"
+                  className="mt-7 inline-flex items-center gap-2 rounded-md bg-orange-500 px-6 py-3.5 text-sm font-extrabold text-white transition-colors hover:bg-orange-600"
                 >
                   Open in Google Maps
                   <Navigation className="h-4 w-4" />
@@ -343,7 +357,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Hours placeholder */}
+              {/* Shop Hours */}
               <div className="rounded-md border border-orange-200 bg-orange-50 p-7">
                 <Clock3 className="h-9 w-9 text-orange-600" />
 
@@ -351,10 +365,21 @@ export default function ContactPage() {
                   Shop Timings
                 </h2>
 
-                <p className="mt-3 text-sm font-medium leading-7 text-gray-600">
-                  Add your confirmed opening days and shop timings here before
-                  publishing.
-                </p>
+                <div className="mt-4 space-y-2 text-sm font-semibold text-gray-700">
+                  <div className="flex items-center justify-between gap-4">
+                    <span>Monday – Saturday</span>
+                    <span className="font-extrabold text-black">
+                      11:00 AM – 8:00 PM
+                    </span>
+                  </div>
+
+                  <div className="flex items-center justify-between gap-4 border-t border-orange-200 pt-2">
+                    <span>Sunday</span>
+                    <span className="font-extrabold text-orange-600">
+                      Closed
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -369,7 +394,7 @@ export default function ContactPage() {
                 Find LaptopDoc
               </div>
 
-              <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-black md:text-5xl">
+              <h2 className="mt-5 text-lg font-extrabold tracking-tight text-black md:text-xl">
                 Laptop Repair Shop in{" "}
                 <span className="text-orange-500">Sector 20-C Chandigarh</span>
               </h2>
@@ -402,11 +427,11 @@ export default function ContactPage() {
                 Laptop Repair in Chandigarh
               </p>
 
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-black md:text-5xl">
+              <h2 className="mt-3 text-lg font-extrabold tracking-tight text-black md:text-xl">
                 Visit LaptopDoc in Sector 20-C, Chandigarh
               </h2>
 
-              <div className="mt-7 space-y-5 text-base font-medium leading-8 text-gray-600">
+              <div className="mt-7 space-y-5 text-base  leading-normal text-gray-600">
                 <p>
                   LaptopDoc is located at SCO 66, 1st Floor, Sector 20-C,
                   Chandigarh. The shop provides laptop and desktop repair
@@ -456,40 +481,7 @@ export default function ContactPage() {
             </aside>
           </div>
         </section>
-
-        {/* Final CTA */}
-        <section className="bg-black py-16 text-white">
-          <div className="mx-auto max-w-7xl px-4 lg:px-8">
-            <div className="rounded-md border border-white/10 bg-white/5 p-8 md:p-12">
-              <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-                <div>
-                  <Wrench className="h-10 w-10 text-orange-400" />
-
-                  <h2 className="mt-5 max-w-3xl text-3xl font-extrabold md:text-5xl">
-                    Tell LaptopDoc what is wrong with your device.
-                  </h2>
-
-                  <p className="mt-4 max-w-2xl text-base font-medium leading-8 text-gray-400">
-                    Visit SCO 66, 1st Floor, Sector 20-C, Chandigarh or send
-                    your repair enquiry online.
-                  </p>
-                </div>
-
-                <a
-                  href="https://wa.me/919878224658"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-orange-500 px-8 py-4 text-base font-extrabold text-white transition-all hover:bg-orange-600"
-                >
-                  Contact on WhatsApp
-                  <MessageCircle className="h-5 w-5" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
     </>
   );
 }
-
