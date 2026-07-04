@@ -81,7 +81,7 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div className="flex min-h-[620px] flex-col items-center justify-center rounded-[2rem] border border-green-200 bg-green-50 p-8 text-center shadow-xl shadow-black/5">
+      <div className="flex min-h-155 flex-col items-center justify-center rounded-md border border-green-200 bg-green-50 p-8 text-center shadow-xl shadow-black/5">
         <div className="flex h-20 w-20 items-center justify-center rounded-full bg-green-100 text-green-600">
           <CheckCircle2 className="h-10 w-10" />
         </div>
@@ -102,7 +102,7 @@ export default function ContactForm() {
 
         <div className="mt-8 flex w-full max-w-sm flex-col gap-3">
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/919878224658"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-orange-500 px-7 py-4 text-sm font-extrabold text-white transition-all hover:-translate-y-0.5 hover:bg-orange-600"
@@ -127,7 +127,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-[2rem] border border-gray-200 bg-white p-6 shadow-xl shadow-black/5 md:p-8 lg:p-10"
+      className="rounded-md border border-gray-200 bg-white p-6 shadow-xl shadow-black/5 md:p-8 lg:p-10"
     >
       {/* Form Header */}
       <div>
@@ -183,7 +183,7 @@ export default function ContactForm() {
             required
             autoComplete="tel"
             inputMode="tel"
-            placeholder="+91 98765 43210"
+            placeholder="+91 98782 24658"
             className="w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 py-4 text-sm font-semibold text-black outline-none transition-all placeholder:font-medium placeholder:text-gray-400 focus:border-orange-500 focus:bg-white focus:ring-4 focus:ring-orange-500/10"
           />
         </div>
@@ -309,7 +309,7 @@ export default function ContactForm() {
 
       {/* WhatsApp */}
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/919878224658"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-full border border-gray-200 bg-white px-7 py-4 text-sm font-extrabold text-black transition-all hover:border-orange-200 hover:bg-orange-50 hover:text-orange-600"
@@ -326,3 +326,4 @@ export default function ContactForm() {
     </form>
   );
 }
+

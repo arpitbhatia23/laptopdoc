@@ -47,15 +47,15 @@ export default function Header() {
         {/* Desktop CTA */}
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href="tel:+919876543210"
+            href="tel:+919878224658"
             className="flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2.5 text-sm font-bold text-black transition-all hover:border-orange-200 hover:text-orange-600 hover:shadow-sm"
           >
             <PhoneCall className="h-4 w-4 text-orange-500" />
-            +91 98765 43210
+            +91 98782 24658
           </a>
 
           <a
-            href="https://wa.me/919876543210"
+            href="https://wa.me/919878224658"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full bg-orange-500 px-5 py-2.5 text-sm font-extrabold text-white shadow-lg shadow-orange-500/25 transition-all hover:-translate-y-0.5 hover:bg-orange-600 hover:shadow-orange-500/35"
@@ -105,7 +105,7 @@ export default function Header() {
 
               <div className="mt-4 grid gap-3">
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+919878224658"
                   onClick={() => setOpen(false)}
                   className="flex items-center justify-center gap-2 rounded-xl border border-gray-200 bg-white px-5 py-3 text-sm font-extrabold text-black transition-all hover:border-orange-200 hover:text-orange-600"
                 >
@@ -114,7 +114,7 @@ export default function Header() {
                 </a>
 
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919878224658"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
@@ -131,3 +131,4 @@ export default function Header() {
     </header>
   );
 }
+

@@ -497,7 +497,7 @@ export default function ServicesPage() {
 
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919878224658"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center justify-center gap-2 rounded-md bg-orange-500 px-8 py-4 text-base font-extrabold text-white shadow-xl shadow-orange-500/25 transition-all hover:-translate-y-0.5 hover:bg-orange-600"
@@ -842,7 +842,7 @@ export default function ServicesPage() {
                   </p>
 
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/919878224658"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-orange-500 px-6 py-4 text-sm font-extrabold text-white transition-colors hover:bg-orange-600"
@@ -998,3 +998,4 @@ export default function ServicesPage() {
     </>
   );
 }
+

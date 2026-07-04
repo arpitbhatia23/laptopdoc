@@ -231,7 +231,7 @@ export default async function ServicePage({ params }) {
 
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919878224658"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-md bg-orange-500 px-8 py-4 text-base font-extrabold text-white transition-all hover:bg-orange-600"
@@ -326,7 +326,7 @@ export default async function ServicePage({ params }) {
                 </p>
 
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919878224658"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-orange-500 px-6 py-4 text-sm font-extrabold text-white transition-colors hover:bg-orange-600"
@@ -519,7 +519,7 @@ export default async function ServicePage({ params }) {
                 <div>
                   <ShieldCheck className="h-10 w-10 text-orange-400" />
 
-                  <h2 className="mt-5 max-w-3xl text-3xl font-extrabold md:text-5xl">
+                  <h2 className="mt-5 max-w-3xl text-xl font-extrabold md:text-2xl">
                     Ask LaptopDoc about your device problem.
                   </h2>
 
@@ -530,10 +530,10 @@ export default async function ServicePage({ params }) {
                 </div>
 
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919878224658"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-orange-500 px-8 py-4 text-base font-extrabold text-white transition-all hover:bg-orange-600"
+                  className="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-orange-500 px-8 py-4 text-base font-extrabold text-white transition-all hover:bg-orange-600"
                 >
                   Contact on WhatsApp
                   <MessageCircle className="h-5 w-5" />

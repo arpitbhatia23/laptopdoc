@@ -188,7 +188,7 @@ const Whyus = () => {
             {/* CTA */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919878224658"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 rounded-md bg-orange-500 px-7 py-4 text-sm font-extrabold text-white shadow-xl shadow-orange-500/25 transition-all hover:-translate-y-0.5 hover:bg-orange-600"
@@ -326,7 +326,7 @@ const Whyus = () => {
 
             <div className="flex lg:justify-end">
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919878224658"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-black px-8 py-4 text-base font-extrabold text-white transition-all hover:-translate-y-0.5 hover:bg-gray-900 sm:w-auto"
@@ -343,3 +343,4 @@ const Whyus = () => {
 };
 
 export default Whyus;
+

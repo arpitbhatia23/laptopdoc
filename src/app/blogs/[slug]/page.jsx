@@ -337,7 +337,7 @@ export default async function BlogPage({ params }) {
                 </p>
 
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919878224658"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-orange-500 px-6 py-4 text-sm font-extrabold text-white transition-colors hover:bg-orange-600"

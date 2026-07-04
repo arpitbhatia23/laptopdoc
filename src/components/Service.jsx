@@ -271,7 +271,7 @@ const Service = () => {
                     </Link>
 
                     <a
-                      href="https://wa.me/919876543210"
+                      href="https://wa.me/919878224658"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-all hover:bg-orange-500"
@@ -319,7 +319,7 @@ const Service = () => {
 
             <div className="flex lg:justify-end">
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919878224658"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-orange-500 px-8 py-4 text-base font-extrabold text-white shadow-xl shadow-orange-500/30 transition-all hover:-translate-y-0.5 hover:bg-orange-600 sm:w-auto"
@@ -336,3 +336,4 @@ const Service = () => {
 };
 
 export default Service;
+

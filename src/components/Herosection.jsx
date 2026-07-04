@@ -66,7 +66,7 @@ const Herosection = () => {
           {/* CTA Buttons */}
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919878224658"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-md bg-orange-500 px-8 py-4 text-base font-extrabold text-white shadow-2xl shadow-orange-500/30 transition-all hover:-translate-y-0.5 hover:bg-orange-600"
@@ -76,7 +76,7 @@ const Herosection = () => {
             </a>
 
             <a
-              href="tel:+919876543210"
+              href="tel:+919878224658"
               className="inline-flex items-center justify-center gap-2 rounded-md border border-white/15 bg-white/10 px-8 py-4 text-base font-extrabold text-white backdrop-blur-md transition-all hover:bg-white hover:text-black"
             >
               <PhoneCall className="h-5 w-5 text-orange-400" />
@@ -108,3 +108,4 @@ const Herosection = () => {
 };
 
 export default Herosection;
+

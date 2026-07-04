@@ -166,7 +166,7 @@ const LaptopResale = () => {
               </Link>
 
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919878224658"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-md border border-white/15 bg-white/10 px-8 py-4 text-base font-extrabold text-white transition-all hover:bg-white hover:text-black"
@@ -222,3 +222,4 @@ const LaptopResale = () => {
 };
 
 export default LaptopResale;
+
