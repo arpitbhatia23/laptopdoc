@@ -7,7 +7,7 @@ import {
   Gift,
   Sparkles,
 } from "lucide-react";
-
+import { unstable_noStore as noStore } from "next/cache";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,6 +21,7 @@ export const dynamic = "force-dynamic";
 /* -------------------------------------------------------------------------- */
 
 async function getActiveOffer() {
+  noStore();
   await dbConnect();
 
   const now = new Date();
