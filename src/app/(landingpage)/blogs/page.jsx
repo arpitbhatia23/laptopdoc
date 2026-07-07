@@ -14,7 +14,7 @@ import {
   Wrench,
 } from "lucide-react";
 
-const siteUrl = "https://yourdomain.com";
+const siteUrl = "https://laptopdoc.in";
 
 export const metadata = {
   title: "Laptop Repair & Maintenance Tips | LaptopDoc Blog",

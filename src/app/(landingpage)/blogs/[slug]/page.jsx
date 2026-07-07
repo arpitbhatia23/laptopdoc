@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 import { getBlogBySlug, blogs } from "@/data/blogs/data";
-const siteUrl = "https://yourdomain.com";
+const siteUrl = "https://laptopdoc.in";
 
 export async function generateStaticParams() {
   return blogs.map((blog) => ({

@@ -40,3 +40,28 @@ body {
 .animate-brand-scroll:hover {
   animation-play-state: paused;
 }
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.review-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.review-track {
+  display: flex;
+  width: max-content;
+  gap: 24px;
+  animation: infiniteScroll 40s linear infinite;
+}
+
+.review-slider:hover .review-track {
+  animation-play-state: paused;
+}

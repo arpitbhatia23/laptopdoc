@@ -15,7 +15,7 @@ import {
 
 import { getServiceBySlug, services } from "@/data/services/data";
 
-const siteUrl = "https://yourdomain.com";
+const siteUrl = "https://laptopdoc.in";
 
 export function generateStaticParams() {
   return services.map((service) => ({

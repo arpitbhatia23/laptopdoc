@@ -24,7 +24,7 @@ import {
   Wrench,
 } from "lucide-react";
 
-const siteUrl = "https://yourdomain.com";
+const siteUrl = "https://laptopdoc.in";
 
 export const metadata = {
   title: "Laptop Repair Services in Chandigarh Tricity | LaptopDoc",
@@ -998,4 +998,3 @@ export default function ServicesPage() {
     </>
   );
 }
-

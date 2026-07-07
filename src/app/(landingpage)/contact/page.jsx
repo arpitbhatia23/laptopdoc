@@ -17,7 +17,7 @@ import {
 
 import ContactForm from "@/components/ContactForm";
 
-const siteUrl = "https://yourdomain.com";
+const siteUrl = "https://laptopdoc.in";
 
 const shopAddress = "SCO 66, 1st Floor, Sector 20-C, Chandigarh";
 
@@ -124,11 +124,22 @@ const breadcrumbSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "ComputerStore",
+  "@id": `${siteUrl}/#business`,
+
   name: "LaptopDoc",
+
   url: siteUrl,
 
+  telephone: "+919878224658",
+
+  priceRange: "₹₹",
+
+  image: `${siteUrl}/heroimage.png`,
+
+  logo: `${siteUrl}/logo.png`,
+
   description:
-    "LaptopDoc provides laptop repair, desktop repair, data recovery, maintenance, RAM upgrades, SSD upgrades, software services and used laptop resale support in Chandigarh Tricity.",
+    "LaptopDoc provides professional laptop repair, desktop repair, data recovery, maintenance, RAM upgrades, SSD upgrades, software services and tested used laptop resale in Chandigarh, Mohali, Panchkula and Zirakpur.",
 
   address: {
     "@type": "PostalAddress",
@@ -137,9 +148,11 @@ const localBusinessSchema = {
     addressRegion: "Chandigarh",
     addressCountry: "IN",
   },
+
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
+
       dayOfWeek: [
         "Monday",
         "Tuesday",
@@ -148,11 +161,30 @@ const localBusinessSchema = {
         "Friday",
         "Saturday",
       ],
+
       opens: "11:00",
       closes: "20:00",
     },
   ],
-  areaServed: ["Chandigarh", "Mohali", "Panchkula", "Zirakpur"],
+
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Chandigarh",
+    },
+    {
+      "@type": "City",
+      name: "Mohali",
+    },
+    {
+      "@type": "City",
+      name: "Panchkula",
+    },
+    {
+      "@type": "City",
+      name: "Zirakpur",
+    },
+  ],
 
   knowsAbout: [
     "Laptop Repair",
@@ -160,11 +192,22 @@ const localBusinessSchema = {
     "Motherboard Repair",
     "Laptop Screen Replacement",
     "Laptop Hinge Repair",
+    "Laptop Keyboard Replacement",
+    "Laptop Battery Replacement",
+    "Laptop Heating Repair",
     "Data Recovery",
     "RAM Upgrade",
     "SSD Upgrade",
     "Virus Removal",
+    "Windows Installation",
+    "Laptop Software Repair",
+    "Used Laptop Sales",
+    "Refurbished Laptops",
   ],
+
+  currenciesAccepted: "INR",
+
+  paymentAccepted: ["Cash", "UPI"],
 };
 
 export default function ContactPage() {
