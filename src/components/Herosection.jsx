@@ -35,6 +35,12 @@ async function getActiveOffer() {
     })
     .lean();
 
+  try {
+    console.log("getActiveOffer ->", offer);
+  } catch (e) {
+    // no-op in restricted runtimes
+  }
+
   return offer;
 }
 
