@@ -3,7 +3,7 @@ import Link from "next/link";
 import resellLaptopSchema from "@/models/resellLaptop.schema";
 import dbConnect from "@/utils/dbConnect";
 
-const DEFAULT_WHATSAPP_NUMBER = "919876543210";
+const DEFAULT_WHATSAPP_NUMBER = "919878224658";
 
 /* -------------------------------------------------------------------------- */
 /*                                  Helpers                                   */

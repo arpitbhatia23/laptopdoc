@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 // Replace with the real WhatsApp number
-const WHATSAPP_NUMBER = "919876543210";
+const WHATSAPP_NUMBER = "919878224658";
 
 /* -------------------------------------------------------------------------- */
 /*                              Helper Functions                              */
