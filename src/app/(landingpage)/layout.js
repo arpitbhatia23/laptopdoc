@@ -111,15 +111,15 @@ const localBusinessSchema = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(localBusinessSchema),
-        }}
-      />
       <body
         className={`${manrope.className}bg-gray-50 text-gray-900 antialiased `}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

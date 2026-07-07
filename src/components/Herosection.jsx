@@ -27,26 +27,6 @@ async function getActiveOffer() {
 
   const offer = await Offer.findOne({
     active: true,
-
-    $and: [
-      // Offer has started, or no start date was provided
-      {
-        $or: [
-          { startDate: { $exists: false } },
-          { startDate: null },
-          { startDate: { $lte: now } },
-        ],
-      },
-
-      // Offer has not expired, or no end date was provided
-      {
-        $or: [
-          { endDate: { $exists: false } },
-          { endDate: null },
-          { endDate: { $gte: now } },
-        ],
-      },
-    ],
   })
     // Highest priority always wins
     .sort({
