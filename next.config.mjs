@@ -2,19 +2,12 @@ const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
 
 /** @type {import("next").NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-
   // Removes the X-Powered-By: Next.js response header
-  poweredByHeader: false,
 
   // Enabled by default, kept explicit
   compress: true,
 
   images: {
-    /* ---------------------------------------------------------------------- */
-    /* Cloudinary Images                                                      */
-    /* ---------------------------------------------------------------------- */
-
     remotePatterns: [
       {
         protocol: "https",

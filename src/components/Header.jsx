@@ -20,13 +20,13 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-12 w-36 sm:h-20 sm:w-44">
+          <div className="relative h-12 w-36 sm:h-26 sm:w-64">
             <Image
               src="/logo.png"
               alt="Laptop repair and resale shop logo"
               fill
               priority
-              className="object-contain"
+              className="object-cover"
             />
           </div>
         </Link>
@@ -55,13 +55,12 @@ export default function Header() {
           </a>
 
           <a
-            href="https://wa.me/919878224658"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="tel:+917696513535"
+
             className="flex items-center gap-2 rounded-full bg-orange-500 px-5 py-2.5 text-sm font-extrabold text-white shadow-lg shadow-orange-500/25 transition-all hover:-translate-y-0.5 hover:bg-orange-600 hover:shadow-orange-500/35"
           >
-            <MessageCircle className="h-4 w-4" />
-            Get Free Quote
+            <PhoneCall className="h-4 w-4" />
+            +91 7696513535
           </a>
         </div>
 
@@ -131,4 +130,3 @@ export default function Header() {
     </header>
   );
 }
-
