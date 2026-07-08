@@ -3,6 +3,7 @@ import { getServerSession } from "next-auth";
 import resellLaptopSchema from "@/models/resellLaptop.schema";
 import dbConnect from "@/utils/dbConnect";
 import authOptions from "@/app/api/auth/option";
+import { deleteOnCloudinary } from "@/utils/cloudnairy";
 export async function PATCH(req, { params }) {
   const { id } = await params;
   try {
@@ -53,12 +54,7 @@ export async function DELETE(req, { params }) {
     // Delete all Cloudinary images
     if (publicIds.length > 0) {
       const deleteResults = await Promise.allSettled(
-        publicIds.map((publicId) =>
-          cloudinary.uploader.destroy(publicId, {
-            resource_type: "image",
-            invalidate: true,
-          }),
-        ),
+        publicIds.map((publicId) => deleteOnCloudinary(publicId)),
       );
 
       console.log("Cloudinary deletion results:", deleteResults);
