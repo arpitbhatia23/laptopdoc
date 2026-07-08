@@ -21,6 +21,12 @@ const manrope = Manrope({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="EHnBNfpBXl8AA1uNt3uvsezSZzy2XGFXr-qrvBHjrEM"
+        />
+      </head>
       <body
         className={`${manrope.className}bg-gray-50 text-gray-900 antialiased `}
       >
