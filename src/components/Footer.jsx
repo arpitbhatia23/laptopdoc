@@ -276,10 +276,6 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} LaptopDoc. All rights reserved.</p>
 
           <div className="flex flex-wrap items-center gap-5">
-            <Link href="/blogs" className="transition-colors hover:text-white">
-              Tech Tips
-            </Link>
-
             <Link
               href="/services"
               className="transition-colors hover:text-white"
