@@ -590,3 +590,79 @@ export const blogs = [
 export function getBlogBySlug(slug) {
   return blogs.find((blog) => blog.slug === slug);
 }
+
+export const blogsKeywords = [
+  {
+    category: "Maintenance Tips",
+    keywords: [
+      "how to maintain laptop",
+      "laptop maintenance tips",
+      "laptop cleaning tips",
+      "how to increase laptop life",
+      "laptop maintenance Chandigarh",
+      "laptop care guide",
+      "laptop durability tips",
+      "how to keep laptop healthy",
+    ],
+  },
+  {
+    category: "Battery Care",
+    keywords: [
+      "how to increase laptop battery life",
+      "improve laptop battery health",
+      "laptop battery tips",
+      "laptop battery replacement Chandigarh",
+      "extend laptop battery life",
+      "battery conservation tips",
+      "laptop battery care",
+    ],
+  },
+  {
+    category: "Physical Care",
+    keywords: [
+      "laptop hinge care",
+      "broken laptop hinge",
+      "laptop body repair",
+      "laptop hinge repair Chandigarh",
+      "how to prevent laptop hinge damage",
+      "laptop physical maintenance",
+    ],
+  },
+  {
+    category: "Cooling & Performance",
+    keywords: [
+      "when to change laptop thermal paste",
+      "laptop overheating",
+      "thermal paste laptop",
+      "thermal paste service Chandigarh",
+      "how to cool laptop",
+      "laptop heating problem",
+      "gaming laptop care",
+    ],
+  },
+  {
+    category: "Performance Problems",
+    keywords: [
+      "why is my laptop slow",
+      "slow laptop fix",
+      "SSD upgrade laptop",
+      "RAM upgrade laptop",
+      "slow laptop Chandigarh",
+      "how to speed up laptop",
+      "laptop performance improvement",
+    ],
+  },
+  {
+    category: "Buying Guide",
+    keywords: [
+      "how to check used laptop before buying",
+      "used laptop checklist",
+      "used laptop Chandigarh",
+      "refurbished laptop Chandigarh",
+      "what to check when buying used laptop",
+      "second hand laptop buying guide",
+      "used laptops in Chandigarh",
+      "buy second hand laptop Chandigarh",
+    ],
+  },
+];

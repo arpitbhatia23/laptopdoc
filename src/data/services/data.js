@@ -40,8 +40,13 @@ export const services = [
       "laptop motherboard repair Chandigarh",
       "chip level laptop repair Chandigarh",
       "dead laptop repair Chandigarh",
-      "no power laptop repair Chandigarh",
-      "laptop motherboard repair Tricity",
+      "laptop no power repair Chandigarh",
+      "laptop not turning on Chandigarh",
+      "laptop repair service Chandigarh",
+      "laptop repair shop Chandigarh",
+      "laptop repair in Chandigarh",
+      "laptop repair near me",
+      "reliable laptop repair Chandigarh",
     ],
 
     heroDescription:
@@ -126,8 +131,12 @@ export const services = [
     keywords: [
       "laptop screen replacement Chandigarh",
       "laptop display repair Chandigarh",
+      "broken laptop screen repair Chandigarh",
+      "laptop black screen repair Chandigarh",
       "cracked laptop screen Chandigarh",
-      "laptop screen repair Tricity",
+      "laptop screen replacement near me",
+      "best laptop repair shop Chandigarh",
+      "laptop repair Chandigarh Sector 20",
     ],
 
     heroDescription:
@@ -201,8 +210,12 @@ export const services = [
     keywords: [
       "laptop hinge repair Chandigarh",
       "laptop body repair Chandigarh",
+      "laptop hinge repair Sector 20",
       "broken laptop hinge Chandigarh",
       "laptop body replacement Chandigarh",
+      "laptop panel repair Chandigarh",
+      "laptop repair in Chandigarh",
+      "laptop repair shop in Chandigarh",
     ],
 
     heroDescription:
@@ -275,7 +288,11 @@ export const services = [
     keywords: [
       "laptop battery replacement Chandigarh",
       "laptop charger repair Chandigarh",
+      "laptop charging port repair Chandigarh",
+      "laptop not charging repair Chandigarh",
       "laptop charging problem Chandigarh",
+      "laptop battery repair Chandigarh",
+      "laptop repair with warranty Chandigarh",
     ],
 
     heroDescription:
@@ -346,10 +363,12 @@ export const services = [
       "Laptop data recovery support in Chandigarh for deleted files, corrupted systems, damaged HDDs, SSDs and non-booting laptops.",
 
     keywords: [
-      "data recovery Chandigarh",
       "laptop data recovery Chandigarh",
-      "hard drive data recovery Chandigarh",
+      "hard disk data recovery Chandigarh",
       "SSD data recovery Chandigarh",
+      "data recovery Chandigarh",
+      "laptop data recovery service Chandigarh",
+      "reliable laptop repair Chandigarh",
     ],
 
     heroDescription:
@@ -422,7 +441,10 @@ export const services = [
     keywords: [
       "laptop OS installation Chandigarh",
       "Windows installation Chandigarh",
+      "Windows 11 installation Chandigarh",
       "laptop formatting Chandigarh",
+      "laptop software repair Chandigarh",
+      "laptop repair service Chandigarh",
     ],
 
     heroDescription:
@@ -494,6 +516,10 @@ export const services = [
       "laptop service Chandigarh",
       "laptop cleaning Chandigarh",
       "laptop maintenance Chandigarh",
+      "laptop cleaning service Chandigarh",
+      "laptop service center Chandigarh",
+      "laptop repair in Chandigarh",
+      "affordable laptop repair Chandigarh",
     ],
 
     heroDescription:
@@ -564,7 +590,10 @@ export const services = [
     keywords: [
       "laptop thermal paste change Chandigarh",
       "laptop overheating repair Chandigarh",
-      "gaming laptop cleaning Chandigarh",
+      "gaming laptop overheating repair Chandigarh",
+      "laptop cleaning service Chandigarh",
+      "laptop fan repair Chandigarh",
+      "laptop repair shop in Chandigarh",
     ],
 
     heroDescription:
@@ -635,7 +664,10 @@ export const services = [
     keywords: [
       "laptop RAM upgrade Chandigarh",
       "upgrade laptop RAM Chandigarh",
-      "laptop memory upgrade Tricity",
+      "laptop memory upgrade Chandigarh",
+      "slow laptop repair Chandigarh",
+      "slow laptop solution Chandigarh",
+      "laptop performance upgrade Chandigarh",
     ],
 
     heroDescription:
@@ -706,6 +738,10 @@ export const services = [
       "laptop SSD upgrade Chandigarh",
       "HDD to SSD Chandigarh",
       "NVMe upgrade Chandigarh",
+      "laptop storage upgrade Chandigarh",
+      "laptop speed upgrade Chandigarh",
+      "slow laptop repair Chandigarh",
+      "affordable laptop repair Chandigarh",
     ],
 
     heroDescription:
@@ -779,7 +815,10 @@ export const services = [
     keywords: [
       "desktop repair Chandigarh",
       "computer repair Chandigarh",
+      "computer repair shop Chandigarh",
       "PC repair Chandigarh",
+      "computer repair in Chandigarh",
+      "computer repair near me",
     ],
 
     heroDescription:
@@ -853,9 +892,12 @@ export const services = [
       "Virus and malware removal in Chandigarh for pop-ups, browser redirects, unwanted software and slow laptop performance.",
 
     keywords: [
-      "virus removal Chandigarh",
-      "laptop malware removal Chandigarh",
+      "laptop virus removal Chandigarh",
+      "malware removal Chandigarh",
       "computer virus removal Chandigarh",
+      "laptop virus removal service Chandigarh",
+      "laptop repair shop in Chandigarh",
+      "reliable laptop repair Chandigarh",
     ],
 
     heroDescription:

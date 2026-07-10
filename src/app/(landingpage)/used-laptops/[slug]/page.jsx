@@ -7,7 +7,7 @@ import dbConnect from "@/utils/dbConnect";
 import LaptopGallery from "@/components/laptopGallery";
 export const dynamic = "force-dynamic";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://yourwebsite.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://laptopdoc.in";
 
 /* -------------------------------------------------------------------------- */
 /*                               Helper Functions                             */
