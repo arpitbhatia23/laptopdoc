@@ -2,7 +2,7 @@ import "./globals.css";
 import { Manrope } from "next/font/google";
 
 export const metadata = {
-  metadataBase: new URL("https://laptopdoc.com"),
+  metadataBase: new URL("https://laptopdoc.in"),
   title: {
     template: "%s | LaptopDoc - Best Laptop Repair in Chandigarh Sector 20",
     default: "Laptop Repair Chandigarh | 16+ Years – LaptopDoc",
