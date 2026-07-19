@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 
 export const metadata = {
   title: {
-    template: "%s | TricityTech Chandigarh",
+    template: "%s | laptopdoc  Chandigarh",
     default:
       "Best Laptop Repair Shop & Used Laptops in Chandigarh Tricity | TricityTech",
   },

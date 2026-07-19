@@ -5,7 +5,8 @@ export const metadata = {
   metadataBase: new URL("https://laptopdoc.in"),
   title: {
     template: "%s | LaptopDoc - Best Laptop Repair in Chandigarh Sector 20",
-    default: "Laptop Repair Chandigarh | 16+ Years – LaptopDoc",
+    default:
+      "Laptop Repair in Chandigarh | Trusted Computer Repair Shop | LaptopDoc",
   },
   description:
     "Best laptop repair shop in Chandigarh Sector 20. Professional motherboard, screen, hinge, keyboard, battery & water damage repair. Buy used/refurbished laptops. Same-day service.",
@@ -94,7 +95,7 @@ export default function RootLayout({ children }) {
       postalCode: "160020",
       addressCountry: "IN",
     },
-    telephone: "+91-XXXXXXXXXX",
+    telephone: "+919878224658",
     url: "https://laptopdoc.com",
     sameAs: [
       "https://www.facebook.com/laptopdoc",
