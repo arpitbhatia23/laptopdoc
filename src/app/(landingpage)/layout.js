@@ -5,7 +5,7 @@ export const metadata = {
   title: {
     template: "%s | laptopdoc  Chandigarh",
     default:
-      "Best Laptop Repair Shop & Used Laptops in Chandigarh Tricity | TricityTech",
+      "Best Laptop Repair Shop & Used Laptops in Chandigarh Tricity | laptopdoc",
   },
   description:
     "Professional laptop repair, used laptop resale, motherboard and hinge repair, and authorized accessories in Chandigarh, Mohali, Panchkula, and Zirakpur.",

@@ -171,7 +171,7 @@ export const generateLocalBusinessSchema = {
   "@context": "https://schema.org/",
   "@type": "LocalBusiness",
   name: "LaptopDoc",
-  image: "https://laptopdoc.com/logo.png",
+  image: "https://laptopdoc.in/logo.png",
   description:
     "Professional laptop repair, used laptop resale, motherboard and hinge repair in Chandigarh",
   address: {
@@ -183,7 +183,7 @@ export const generateLocalBusinessSchema = {
     addressCountry: "IN",
   },
   telephone: "+91-XXXXXXXXXX",
-  url: "https://laptopdoc.com",
+  url: "https://laptopdoc.in",
   sameAs: [
     "https://www.facebook.com/laptopdoc",
     "https://www.instagram.com/laptopdoc",
@@ -204,6 +204,6 @@ export const generateServiceSchema = (
     "@type": "City",
     name: areaServed,
   },
-  image: "https://laptopdoc.com/service-image.png",
-  url: "https://laptopdoc.com",
+  image: "https://laptopdoc.in/service-image.png",
+  url: "https://laptopdoc.in",
 });

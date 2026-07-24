@@ -35,7 +35,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://laptopdoc.com",
+    url: "https://laptopdoc.in",
     siteName: "LaptopDoc",
     title:
       "Laptop Repair in Chandigarh | Best Repair Shop & Used Laptops | LaptopDoc",
@@ -43,7 +43,7 @@ export const metadata = {
       "Best laptop repair shop in Chandigarh Sector 20. Professional repair for all brands. Buy quality used laptops. Expert technicians with 10+ years experience.",
     images: [
       {
-        url: "https://laptopdoc.com/og-image.png",
+        url: "https://laptopdoc.in/og-image.png",
         width: 1200,
         height: 630,
         alt: "LaptopDoc - Laptop Repair Chandigarh",
@@ -65,7 +65,7 @@ export const metadata = {
     bingbot: "index, follow",
   },
   alternates: {
-    canonical: "https://laptopdoc.com",
+    canonical: "https://laptopdoc.in",
   },
   verification: {
     google: "EHnBNfpBXl8AA1uNt3uvsezSZzy2XGFXr-qrvBHjrEM",
@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "LaptopDoc",
-    image: "https://laptopdoc.com/logo.png",
+    image: "https://laptopdoc.in/logo.png",
     description:
       "Best laptop repair shop in Chandigarh Sector 20. Professional motherboard, screen, hinge repair and used laptop resale.",
     address: {
@@ -96,7 +96,7 @@ export default function RootLayout({ children }) {
       addressCountry: "IN",
     },
     telephone: "+919878224658",
-    url: "https://laptopdoc.com",
+    url: "https://laptopdoc.in",
     sameAs: [
       "https://www.facebook.com/laptopdoc",
       "https://www.instagram.com/laptopdoc",
@@ -132,7 +132,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
-        <link rel="canonical" href="https://laptopdoc.com" />
+        <link rel="canonical" href="https://laptopdoc.in" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#1f2937" />
       </head>

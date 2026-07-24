@@ -18,13 +18,13 @@ export const generatePageMetadata = ({
     description,
     type,
     url,
-    image: image || "https://laptopdoc.com/og-image.png",
+    image: image || "https://laptopdoc.in/og-image.png",
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    image: image || "https://laptopdoc.com/twitter-image.png",
+    image: image || "https://laptopdoc.in/twitter-image.png",
   },
   alternates,
   robots: {
