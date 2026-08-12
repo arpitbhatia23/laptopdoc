@@ -113,14 +113,13 @@ export default function Header() {
                 </a>
 
                 <a
-                  href="https://wa.me/919878224658"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="tel:+917696513535"
+
                   onClick={() => setOpen(false)}
                   className="flex items-center justify-center gap-2 rounded-xl bg-orange-500 px-5 py-3 text-sm font-extrabold text-white shadow-lg shadow-orange-500/25 transition-all hover:bg-orange-600"
                 >
-                  <MessageCircle className="h-4 w-4" />
-                  WhatsApp Quote
+                  <PhoneCall className="h-4 w-4" />
+                  +91 7696513535
                 </a>
               </div>
             </div>
