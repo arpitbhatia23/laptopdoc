@@ -1,7 +1,7 @@
 import { services } from "@/data/services/data";
 import { blogs } from "@/data/blogs/data";
 
-const siteUrl = "https://laptopdoc.in";
+const siteUrl = "https://www.laptopdoc.in";
 
 export default async function sitemap() {
   const staticRoutes = [
