@@ -68,8 +68,7 @@ export const metadata = {
     canonical: "https://laptopdoc.in",
   },
   verification: {
-    google:
-      "google-site-verification=97XZTgoqem_XxDZ9AQ5StL9m7MHidljsAytU1TAVXfA",
+    google: "EHnBNfpBXl8AA1uNt3uvsezSZzy2XGFXr-qrvBHjrEM",
   },
 };
 
