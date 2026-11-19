@@ -68,7 +68,7 @@ export const metadata = {
     canonical: "https://laptopdoc.in",
   },
   verification: {
-    google: "EHnBNfpBXl8AA1uNt3uvsezSZzy2XGFXr-qrvBHjrEM",
+    google: "97XZTgoqem_XxDZ9AQ5StL9m7MHidljsAytU1TAVXfA",
   },
 };
 
@@ -84,7 +84,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "LaptopDoc",
-    image: "https://laptopdoc.in/logo.png",
+    image: "https://www.laptopdoc.in/logo.png",
     description:
       "Best laptop repair shop in Chandigarh Sector 20. Professional motherboard, screen, hinge repair and used laptop resale.",
     address: {
