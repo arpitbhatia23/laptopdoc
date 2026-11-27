@@ -217,69 +217,72 @@ const Service = () => {
             return (
               <div
                 key={service.title}
-                className="group overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+                className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
               >
-                {/* Image */}
-                <div className="relative h-56 overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={`${service.title} by LaptopDoc in Chandigarh Tricity`}
-                    fill
-                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+                <div>
+                  {/* Image */}
+                  <div className="relative h-56 overflow-hidden bg-gray-100">
+                    <Image
+                      src={service.image}
+                      alt={`${service.title} by LaptopDoc in Chandigarh Tricity`}
+                      fill
+                      sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
 
-                  <div className="absolute inset-0 bg-linear-to-t from-black/75 via-black/15 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
 
-                  <div className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-white/95 px-3 py-1.5 text-xs font-extrabold text-black shadow-lg">
-                    <Icon className="h-3.5 w-3.5 text-orange-500" />
-                    {service.tag}
+                    <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-gray-900 shadow-sm backdrop-blur-xs">
+                      <Icon className="h-3.5 w-3.5 text-orange-500" aria-hidden="true" />
+                      {service.tag}
+                    </div>
+
+                    <div className="absolute bottom-4 left-5 right-5">
+                      <h3 className="text-xl font-extrabold text-white">
+                        {service.title}
+                      </h3>
+                    </div>
                   </div>
 
-                  <div className="absolute bottom-5 left-5 right-5">
-                    <h3 className="text-2xl font-extrabold text-white">
-                      {service.title}
-                    </h3>
+                  {/* Content */}
+                  <div className="p-6">
+                    <p className="min-h-16 text-sm font-medium leading-relaxed text-gray-600">
+                      {service.description}
+                    </p>
+
+                    <div className="mt-4 space-y-2 border-t border-gray-50 pt-4">
+                      {service.points.map((point) => (
+                        <div
+                          key={point}
+                          className="flex items-center gap-2 text-xs font-semibold text-gray-700"
+                        >
+                          <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-orange-500" aria-hidden="true" />
+                          {point}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
-                {/* Content */}
-                <div className="p-6">
-                  <p className="min-h-24 text-sm font-medium leading-7 text-gray-600">
-                    {service.description}
-                  </p>
+                <div className="flex items-center justify-between border-t border-gray-100 bg-gray-50/50 px-6 py-4">
+                  <Link
+                    href={service.href}
+                    className="inline-flex items-center gap-1.5 text-sm font-bold text-gray-900 transition-colors hover:text-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 rounded-sm"
+                  >
+                    View Details
+                    <ArrowRight className="h-4 w-4 text-orange-500 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                  </Link>
 
-                  <div className="mt-5 space-y-3">
-                    {service.points.map((point) => (
-                      <div
-                        key={point}
-                        className="flex items-center gap-2 text-sm font-bold text-gray-700"
-                      >
-                        <CheckCircle2 className="h-4 w-4 shrink-0 text-orange-500" />
-                        {point}
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-7 flex items-center justify-between gap-3">
-                    <Link
-                      href={service.href}
-                      className="group/link inline-flex items-center gap-1 text-sm font-extrabold text-orange-500 transition-all hover:text-orange-600"
-                    >
-                      Learn More
-                      <ArrowRight className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
-                    </Link>
-
-                    <a
-                      href="https://wa.me/919878224658"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-all hover:bg-orange-500"
-                      aria-label={`Get quote for ${service.title}`}
-                    >
-                      <MessageCircle className="h-4 w-4" />
-                    </a>
-                  </div>
+                  <a
+                    href="https://wa.me/919878224658"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-orange-50 px-3 py-1.5 text-xs font-extrabold text-orange-600 transition-all hover:bg-orange-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+                    aria-label={`Get quote for ${service.title}`}
+                  >
+                    <MessageCircle className="h-3.5 w-3.5" aria-hidden="true" />
+                    Enquire
+                  </a>
                 </div>
               </div>
             );
@@ -336,4 +339,3 @@ const Service = () => {
 };
 
 export default Service;
-

@@ -10,6 +10,7 @@ import {
   Clock,
   MessageCircle,
   ShieldCheck,
+  UserCheck,
 } from "lucide-react";
 
 import { getBlogBySlug, blogs } from "@/data/blogs/data";
@@ -106,8 +107,14 @@ export default async function BlogPage({ params }) {
     dateModified: blog.updatedAt,
 
     author: {
-      "@type": "Organization",
-      name: "LaptopDoc",
+      "@type": "Person",
+      name: blog.author?.name || "Gurpreet Singh",
+      jobTitle: blog.author?.role || "Lead Hardware Specialist",
+      url: `${siteUrl}/contact`,
+      worksFor: {
+        "@type": "LocalBusiness",
+        name: "LaptopDoc",
+      },
     },
 
     publisher: {
@@ -241,6 +248,11 @@ export default async function BlogPage({ params }) {
                     year: "numeric",
                   })}
                 </span>
+
+                <span className="inline-flex items-center gap-2">
+                  <UserCheck className="h-4 w-4 text-orange-400" />
+                  Written by {blog.author?.name || "Gurpreet Singh (16+ Yrs Exp)"}
+                </span>
               </div>
             </div>
           </div>
@@ -292,6 +304,34 @@ export default async function BlogPage({ params }) {
                     )}
                   </section>
                 ))}
+              </div>
+
+              {/* Author & Expert Review Box (E-E-A-T) */}
+              <div className="mt-14 rounded-xl border border-gray-200 bg-gray-50 p-6 md:p-8">
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
+                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-orange-500 text-xl font-extrabold text-white shadow-md">
+                    GS
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <h3 className="text-lg font-bold text-black">
+                        {blog.author?.name || "Gurpreet Singh"}
+                      </h3>
+                      <span className="rounded-full bg-orange-100 px-3 py-0.5 text-xs font-bold text-orange-700">
+                        {blog.author?.role || "Lead Hardware Specialist"}
+                      </span>
+                    </div>
+                    <p className="mt-2 text-sm leading-6 text-gray-600">
+                      {blog.author?.bio ||
+                        "Lead hardware engineer at LaptopDoc, Sector 20-C Chandigarh with over 16 years of practical bench experience in chip-level motherboard diagnostics, micro-soldering, hinge reconstruction, and computer refurbishment."}
+                    </p>
+                    <div className="mt-3 flex flex-wrap items-center gap-4 text-xs font-semibold text-gray-500">
+                      <span>✓ 16+ Years Bench Experience</span>
+                      <span>✓ Sector 20-C, Chandigarh</span>
+                      <span>✓ Hardware Verified Advice</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Related Services */}

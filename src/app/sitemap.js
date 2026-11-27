@@ -10,6 +10,10 @@ export default async function sitemap() {
     "/blogs",
     "/contact",
     "/used-laptops",
+    "/sell-old-laptop-chandigarh",
+    "/warranty-policy",
+    "/privacy-policy",
+    "/terms",
   ].map((path) => ({
     url: `${siteUrl}${path}`,
     lastModified: new Date().toISOString(),

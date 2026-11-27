@@ -4,12 +4,12 @@ import { Manrope } from "next/font/google";
 export const metadata = {
   metadataBase: new URL("https://laptopdoc.in"),
   title: {
-    template: "%s | LaptopDoc - Best Laptop Repair in Chandigarh Sector 20",
+    template: "%s | LaptopDoc Chandigarh",
     default:
-      "Laptop Repair in Chandigarh | Trusted Computer Repair Shop | LaptopDoc",
+      "Laptop Repair in Chandigarh | Trusted Shop | LaptopDoc",
   },
   description:
-    "Best laptop repair shop in Chandigarh Sector 20. Professional motherboard, screen, hinge, keyboard, battery & water damage repair. Buy used/refurbished laptops. Same-day service.",
+    "Best laptop repair shop in Chandigarh Sector 20. Expert motherboard, screen, hinge & battery repair, plus certified used laptops. Same-day service in Tricity.",
   keywords: [
     "laptop repair in Chandigarh",
     "laptop repair Chandigarh",
@@ -24,7 +24,7 @@ export const metadata = {
     "laptop screen replacement",
     "laptop hinge repair",
   ],
-  authors: [{ name: "LaptopDoc Team" }],
+  authors: [{ name: "Gurpreet Singh (LaptopDoc)" }],
   creator: "LaptopDoc",
   publisher: "LaptopDoc",
   formatDetection: {
@@ -40,7 +40,7 @@ export const metadata = {
     title:
       "Laptop Repair in Chandigarh | Best Repair Shop & Used Laptops | LaptopDoc",
     description:
-      "Best laptop repair shop in Chandigarh Sector 20. Professional repair for all brands. Buy quality used laptops. Expert technicians with 10+ years experience.",
+      "Best laptop repair shop in Chandigarh Sector 20. Professional repair for all brands. Buy quality used laptops. Expert technicians with 16+ years experience.",
     images: [
       {
         url: "https://laptopdoc.in/og-image.png",
@@ -54,7 +54,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Laptop Repair in Chandigarh | LaptopDoc",
     description:
-      "Best laptop repair shop in Chandigarh Sector 20. Professional repair for all brands.",
+      "Best laptop repair shop in Chandigarh Sector 20. Professional repair for all brands with 16+ years experience.",
     creator: "@laptopdoc",
   },
   robots: {
@@ -89,12 +89,13 @@ export default function RootLayout({ children }) {
       "Best laptop repair shop in Chandigarh Sector 20. Professional motherboard, screen, hinge repair and used laptop resale.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Sector 20",
+      streetAddress: "SCO 66, 1st Floor, Sector 20-C",
       addressLocality: "Chandigarh",
       addressRegion: "Chandigarh",
       postalCode: "160020",
       addressCountry: "IN",
     },
+    priceRange: "$$",
     telephone: "+919878224658",
     url: "https://laptopdoc.in",
     sameAs: [

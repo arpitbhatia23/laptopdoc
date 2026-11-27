@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import FloatingActions from "../../components/FloatingActions";
 
 export const metadata = {
   title: {
@@ -18,7 +19,7 @@ const manrope = Manrope({
   display: "swap",
   variable: "--font-manrope",
 });
-const siteUrl = "https://laptopdoc.in";
+const siteUrl = "https://www.laptopdoc.in";
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -37,6 +38,13 @@ const localBusinessSchema = {
 
   logo: `${siteUrl}/logo.png`,
 
+  hasMap: "https://maps.google.com/?cid=3129959423531099582",
+
+  sameAs: [
+    "https://g.page/r/Cb4l9TCD2W8rEBE/",
+    "https://maps.google.com/?cid=3129959423531099582",
+  ],
+
   description:
     "LaptopDoc provides professional laptop repair, desktop repair, data recovery, maintenance, RAM upgrades, SSD upgrades, software services and tested used laptop resale in Chandigarh, Mohali, Panchkula and Zirakpur.",
 
@@ -44,6 +52,7 @@ const localBusinessSchema = {
     "@type": "PostalAddress",
     streetAddress: "SCO 66, 1st Floor, Sector 20-C",
     addressLocality: "Chandigarh",
+    postalCode: "160020",
     addressRegion: "Chandigarh",
     addressCountry: "IN",
   },
@@ -123,6 +132,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <FloatingActions />
       </body>
     </html>
   );

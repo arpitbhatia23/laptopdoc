@@ -66,8 +66,20 @@ const topServices = [
 
 const serviceAreas = [
   {
-    label: "Chandigarh",
-    href: "/laptop-repair-chandigarh",
+    label: "Chandigarh (Sector 20)",
+    href: "/contact",
+  },
+  {
+    label: "Mohali",
+    href: "/contact",
+  },
+  {
+    label: "Panchkula",
+    href: "/contact",
+  },
+  {
+    label: "Zirakpur",
+    href: "/contact",
   },
 ];
 
@@ -167,19 +179,24 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 rounded-md border border-white/10 bg-white/5 px-4 py-3">
+              <a
+                href="https://g.page/r/Cb4l9TCD2W8rEBE/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 rounded-md border border-white/10 bg-white/5 px-4 py-3 transition-colors hover:border-orange-500/40 hover:bg-white/10"
+              >
                 <MapPin className="h-5 w-5 shrink-0 text-orange-400" />
 
                 <div>
                   <p className="text-sm font-extrabold text-white">
-                    Chandigarh Tricity
+                    SCO 66, Sector 20-C, Chandigarh
                   </p>
 
-                  <p className="mt-0.5 text-xs font-medium text-gray-500">
-                    Chandigarh, Mohali, Panchkula and nearby areas
+                  <p className="mt-0.5 text-xs font-medium text-orange-300">
+                    Open on Google Maps &rarr;
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -281,6 +298,17 @@ export default function Footer() {
               className="transition-colors hover:text-white"
             >
               Services
+            </Link>
+
+            <Link
+              href="/privacy-policy"
+              className="transition-colors hover:text-white"
+            >
+              Privacy Policy
+            </Link>
+
+            <Link href="/terms" className="transition-colors hover:text-white">
+              Terms of Service
             </Link>
 
             <Link

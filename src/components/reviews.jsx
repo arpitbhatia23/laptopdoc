@@ -107,37 +107,47 @@ export default function ReviewsSection() {
           </p>
         </div>
 
-        <div className="review-slider mt-12">
+        <div className="review-slider mt-12 py-2">
           <div className="review-track">
             {scrollingReviews.map((item, index) => (
               <article
                 key={index}
-                className="w-90 shrink-0 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+                className="w-84 sm:w-90 shrink-0 rounded-2xl border border-gray-100 bg-white p-6 shadow-xs hover:border-orange-200 hover:shadow-md transition-all duration-300 flex flex-col justify-between"
               >
-                <div className="flex gap-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star
-                      key={star}
-                      className={`h-5 w-5 ${
-                        star <= item.rating
-                          ? "fill-yellow-400 text-yellow-400"
-                          : "text-gray-300"
-                      }`}
-                    />
-                  ))}
+                <div>
+                  <div className="flex items-center gap-1">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <Star
+                        key={star}
+                        aria-hidden="true"
+                        className={`h-4 w-4 ${
+                          star <= item.rating
+                            ? "fill-orange-400 text-orange-400"
+                            : "text-gray-200"
+                        }`}
+                      />
+                    ))}
+                    <span className="ml-2 text-xs font-bold text-gray-500">
+                      {item.rating}.0
+                    </span>
+                  </div>
+
+                  <p className="mt-4 text-sm leading-relaxed text-gray-700 italic">
+                    &ldquo;{item.review}&rdquo;
+                  </p>
                 </div>
 
-                <p className="mt-5 text-sm leading-7 text-gray-600">
-                  "{item.review}"
-                </p>
-
-                <div className="mt-6 border-t pt-5">
-                  <h3 className="font-bold">{item.name}</h3>
-
-                  <p className="mt-1 flex items-center gap-2 text-sm text-gray-500">
-                    <MapPin className="h-4 w-4 text-orange-600" />
-                    {item.location}
-                  </p>
+                <div className="mt-6 border-t border-gray-100 pt-4 flex items-center justify-between">
+                  <div>
+                    <h3 className="font-extrabold text-sm text-gray-900">{item.name}</h3>
+                    <p className="mt-0.5 flex items-center gap-1.5 text-xs text-gray-500">
+                      <MapPin className="h-3.5 w-3.5 text-orange-500 shrink-0" aria-hidden="true" />
+                      {item.location}
+                    </p>
+                  </div>
+                  <span className="rounded-full bg-orange-50 px-2.5 py-1 text-[11px] font-bold text-orange-700">
+                    Verified
+                  </span>
                 </div>
               </article>
             ))}

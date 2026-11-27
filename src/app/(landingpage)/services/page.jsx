@@ -9,6 +9,7 @@ import {
   CheckCircle2,
   ChevronRight,
   CircleHelp,
+  Clock,
   Computer,
   Cpu,
   Database,
@@ -27,9 +28,11 @@ import {
 const siteUrl = "https://laptopdoc.in";
 
 export const metadata = {
-  title: "Laptop Repair Services in Chandigarh Tricity | LaptopDoc",
+  title: {
+    absolute: "Laptop Repair Services in Chandigarh Tricity | LaptopDoc",
+  },
   description:
-    "Explore LaptopDoc repair services including motherboard repair, screen replacement, hinge repair, data recovery, SSD and RAM upgrades in Tricity.",
+    "Professional laptop repair in Chandigarh Sector 20. Motherboard, screen, hinge, battery repair & SSD upgrades across Tricity with 16+ years experience.",
   keywords: [
     "laptop repair services Chandigarh",
     "laptop repair Tricity",
@@ -67,7 +70,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Laptop Repair Services in Tricity | LaptopDoc",
     description:
-      "Explore complete laptop repair, maintenance and upgrade services from LaptopDoc.",
+      "Explore complete laptop repair, maintenance and upgrade services from LaptopDoc with 16+ years experience.",
     images: [`${siteUrl}/og/services.jpg`],
   },
 };
@@ -297,19 +300,23 @@ const repairProcess = [
 const areas = [
   {
     title: "Chandigarh",
-    href: "/laptop-repair-chandigarh",
+    href: "/contact",
+    description: "Sector 20-C Shop & Walk-in Diagnostics",
   },
   {
     title: "Mohali",
-    href: "/laptop-repair-mohali",
+    href: "/contact",
+    description: "Express Pickup & Screen Replacement",
   },
   {
     title: "Panchkula",
-    href: "/laptop-repair-panchkula",
+    href: "/contact",
+    description: "Doorstep Pickup & Hardware Upgrades",
   },
   {
     title: "Zirakpur",
-    href: "/laptop-repair-zirakpur",
+    href: "/contact",
+    description: "Same-Day Courier & Chip-Level Support",
   },
 ];
 
@@ -370,11 +377,27 @@ const serviceSchema = {
   "@type": "Service",
   name: "Laptop and Desktop Repair Services",
   provider: {
-    "@type": "Organization",
+    "@type": "LocalBusiness",
     name: "LaptopDoc",
     url: siteUrl,
+    telephone: "+919878224658",
+    priceRange: "$$",
+    image: `${siteUrl}/logo.png`,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "SCO 66, 1st Floor, Sector 20-C",
+      addressLocality: "Chandigarh",
+      addressRegion: "Chandigarh",
+      postalCode: "160020",
+      addressCountry: "IN",
+    },
   },
-  areaServed: ["Chandigarh", "Mohali", "Panchkula", "Zirakpur"],
+  areaServed: [
+    { "@type": "City", name: "Chandigarh" },
+    { "@type": "City", name: "Mohali" },
+    { "@type": "City", name: "Panchkula" },
+    { "@type": "City", name: "Zirakpur" },
+  ],
   serviceType: [
     "Laptop Repair",
     "Desktop Repair",
@@ -542,68 +565,188 @@ export default function ServicesPage() {
             </div>
 
             {/* Services */}
-            <div className="mt-14 grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {services.map((service) => {
                 const Icon = service.icon;
 
                 return (
                   <article
                     key={service.title}
-                    className="group flex h-full flex-col overflow-hidden rounded-md border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+                    className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
                   >
-                    <div className="relative h-60 overflow-hidden">
-                      <Image
-                        src={service.image}
-                        alt={`${service.title} by LaptopDoc in Chandigarh Tricity`}
-                        fill
-                        sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) calc(50vw - 32px), 400px"
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
+                    <div>
+                      <div className="relative h-56 overflow-hidden bg-gray-100">
+                        <Image
+                          src={service.image}
+                          alt={`${service.title} by LaptopDoc in Chandigarh Tricity`}
+                          fill
+                          sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) calc(50vw - 32px), 400px"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
 
-                      <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent" />
+                        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
 
-                      <div className="absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-white/95 px-3 py-2 text-xs font-extrabold text-black shadow-lg">
-                        <Icon className="h-4 w-4 text-orange-500" />
-                        {service.tag}
+                        <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-gray-900 shadow-sm backdrop-blur-xs">
+                          <Icon className="h-3.5 w-3.5 text-orange-500" aria-hidden="true" />
+                          {service.tag}
+                        </div>
+
+                        <div className="absolute bottom-4 left-5 right-5">
+                          <h2 className="text-xl font-extrabold text-white">
+                            {service.title}
+                          </h2>
+                        </div>
                       </div>
 
-                      <div className="absolute bottom-5 left-5 right-5">
-                        <h2 className="text-2xl font-extrabold text-white">
-                          {service.title}
-                        </h2>
+                      <div className="p-6">
+                        <p className="min-h-16 text-sm font-medium leading-relaxed text-gray-600">
+                          {service.description}
+                        </p>
+
+                        <ul className="mt-4 space-y-2 border-t border-gray-50 pt-4">
+                          {service.points.map((point) => (
+                            <li
+                              key={point}
+                              className="flex items-center gap-2 text-xs font-semibold text-gray-700"
+                            >
+                              <CheckCircle2 className="h-3.5 w-3.5 shrink-0 text-orange-500" aria-hidden="true" />
+                              {point}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
 
-                    <div className="flex flex-1 flex-col p-6">
-                      <p className="text-sm font-medium leading-7 text-gray-600">
-                        {service.description}
-                      </p>
+                    <div className="flex items-center justify-between border-t border-gray-100 bg-gray-50/50 px-6 py-4">
+                      <Link
+                        href={service.href}
+                        className="inline-flex items-center gap-1.5 text-sm font-bold text-gray-900 transition-colors hover:text-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 rounded-sm"
+                      >
+                        Explore {service.shortTitle}
+                        <ArrowRight className="h-4 w-4 text-orange-500 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                      </Link>
 
-                      <ul className="mt-5 grid gap-3">
-                        {service.points.map((point) => (
-                          <li
-                            key={point}
-                            className="flex items-center gap-2 text-sm font-bold text-gray-700"
-                          >
-                            <CheckCircle2 className="h-4 w-4 shrink-0 text-orange-500" />
-                            {point}
-                          </li>
-                        ))}
-                      </ul>
-
-                      <div className="mt-auto pt-7">
-                        <Link
-                          href={service.href}
-                          className="group/link inline-flex items-center gap-2 font-extrabold text-orange-500 transition-colors hover:text-orange-600"
-                        >
-                          Explore {service.shortTitle}
-                          <ArrowRight className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
-                        </Link>
-                      </div>
+                      <a
+                        href="https://wa.me/919878224658"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 rounded-full bg-orange-50 px-3 py-1.5 text-xs font-extrabold text-orange-600 transition-all hover:bg-orange-500 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500"
+                        aria-label={`Get quote for ${service.title}`}
+                      >
+                        <MessageCircle className="h-3.5 w-3.5" aria-hidden="true" />
+                        Quote
+                      </a>
                     </div>
                   </article>
                 );
               })}
+            </div>
+          </div>
+        </section>
+
+        {/* Turnaround & Pricing Estimates */}
+        <section className="border-t border-gray-100 bg-gray-50 py-16">
+          <div className="mx-auto max-w-7xl px-4 lg:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <span className="inline-flex items-center gap-2 rounded-full bg-orange-100 px-4 py-1.5 text-sm font-extrabold text-orange-700">
+                <Clock className="h-4 w-4" />
+                Transparent Turnaround & Estimates
+              </span>
+              <h2 className="mt-4 text-2xl font-extrabold text-black md:text-3xl">
+                Fast Turnaround with No Hidden Costs
+              </h2>
+              <p className="mt-3 text-sm text-gray-600">
+                Every repair starts with a free preliminary diagnosis. Below are
+                our typical turnaround times and starting estimates at our
+                Sector 20-C workshop.
+              </p>
+            </div>
+
+            <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  service: "Screen Replacement",
+                  time: "1 – 2 Hours (Same-Day)",
+                  estimate: "Starting from ₹1,800",
+                  note: "14-inch, 15.6-inch, IPS, 144Hz panels in stock with warranty.",
+                },
+                {
+                  service: "SSD & RAM Upgrades",
+                  time: "30 – 45 Minutes",
+                  estimate: "Starting from ₹1,200",
+                  note: "Includes data cloning or fresh OS setup with 3-yr warranty.",
+                },
+                {
+                  service: "Thermal Service & Repasting",
+                  time: "1 – 2 Hours",
+                  estimate: "Starting from ₹499",
+                  note: "Complete dust blanket removal & high-conductivity compound.",
+                },
+                {
+                  service: "Hinge & Body Repair",
+                  time: "Same-Day / 24 Hours",
+                  estimate: "Starting from ₹700",
+                  note: "Reinforced brass anchor rebuild with structural epoxy.",
+                },
+                {
+                  service: "Battery Replacement",
+                  time: "Same-Day Service",
+                  estimate: "Starting from ₹1,400",
+                  note: "Original and OEM Grade-A batteries with 6–12 mo warranty.",
+                },
+                {
+                  service: "Motherboard Chip-Level",
+                  time: "24 – 48 Hours",
+                  estimate: "Quote after diagnosis",
+                  note: "Short circuit tracing, charging IC & power rail soldering.",
+                },
+              ].map((item) => (
+                <div
+                  key={item.service}
+                  className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+                >
+                  <div className="flex items-center justify-between border-b border-gray-100 pb-3">
+                    <h3 className="font-extrabold text-black">
+                      {item.service}
+                    </h3>
+                    <span className="rounded-md bg-orange-50 px-2.5 py-1 text-xs font-bold text-orange-600">
+                      {item.time}
+                    </span>
+                  </div>
+                  <p className="mt-4 text-lg font-extrabold text-orange-500">
+                    {item.estimate}
+                  </p>
+                  <p className="mt-2 text-xs leading-5 text-gray-500">
+                    {item.note}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Supported Brands */}
+            <div className="mt-12 rounded-xl border border-gray-200 bg-white p-6 text-center shadow-sm">
+              <p className="text-xs font-extrabold uppercase tracking-widest text-gray-500">
+                Brands Repaired & Serviced Daily in Sector 20 Chandigarh
+              </p>
+              <div className="mt-4 flex flex-wrap justify-center gap-3 text-sm font-bold text-gray-700">
+                {[
+                  "Dell (Inspiron, Vostro, XPS, Alienware)",
+                  "HP (Pavilion, Victus, Omen, Envy)",
+                  "Lenovo (ThinkPad, IdeaPad, Legion)",
+                  "ASUS (TUF, ROG, ZenBook, VivoBook)",
+                  "Acer (Aspire, Predator, Nitro)",
+                  "Apple (MacBook Pro, MacBook Air)",
+                  "MSI (Gaming Series)",
+                  "Samsung Laptops",
+                ].map((brand) => (
+                  <span
+                    key={brand}
+                    className="rounded-full bg-gray-50 border border-gray-200 px-4 py-2"
+                  >
+                    ✓ {brand}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -937,21 +1080,21 @@ export default function ServicesPage() {
               <div className="grid gap-4 sm:grid-cols-2">
                 {areas.map((area) => (
                   <Link
-                    key={area.href}
+                    key={area.title}
                     href={area.href}
                     className="group flex items-center justify-between rounded-md border border-gray-200 bg-gray-50 p-6 transition-all hover:-translate-y-1 hover:border-orange-200 hover:bg-orange-50"
                   >
                     <div>
-                      <p className="text-sm font-bold text-gray-500">
-                        Laptop Repair in
+                      <p className="text-xs font-bold uppercase tracking-wider text-orange-600">
+                        {area.description}
                       </p>
 
                       <h3 className="mt-1 text-xl font-extrabold text-black">
-                        {area.title}
+                        Laptop Repair in {area.title}
                       </h3>
                     </div>
 
-                    <ArrowRight className="h-5 w-5 text-orange-500 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="h-5 w-5 shrink-0 text-orange-500 transition-transform group-hover:translate-x-1" />
                   </Link>
                 ))}
               </div>
